@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href= "dogs.html">Dogs</a></li>
+                <li><a href= "cats.html">Cats</a></li>
+                <li><a href= "birds.html">Birds</a></li>
+            </ul>
+        </nav>
+        <img src="pictures\tải xuống (10).jpg" width="500px" height="500px" alt="Kinds of pets">
+        <h1>Best of pets</h1>
+        
+            <div id="content">
+                <p>Most pet owners are clear about the immediate joys that come with sharing their lives with companion animals. However, many of us remain unaware of the physical and mental health benefits that can also accompany the pleasure of snuggling up to a furry friend. It’s only recently that studies have begun to scientifically explore the benefits of the human-animal bond.
+
+            
+                    Pets have evolved to become acutely attuned to humans and our behavior and emotions. Dogs, for example, are able to understand many of the words we use, but they’re even better at interpreting our tone of voice, body language, and gestures. And like any good human friend, a loyal dog will look into your eyes to gauge your emotional state and try to understand what you’re thinking and feeling (and to work out when the next walk or treat might be coming, of course). </p>
+            </div>
+            <script>
+                function loadPage(page) {
+                    fetch(page)
+                        .then(response => response.text())
+                        .then(html => {
+                            document.getElementById('content').innerHTML = html;
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            </script>
+        </header>
+    
+</body>
+</html>

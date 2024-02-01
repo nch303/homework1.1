@@ -1,0 +1,20 @@
+div{
+    display: inline-block;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    list-style: armenian;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+}
